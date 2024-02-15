@@ -1,6 +1,6 @@
 package Soru;
 
-public class _21_Soru {
+public class avizeProgrami {
     public static void main (String[] args){
         
         
