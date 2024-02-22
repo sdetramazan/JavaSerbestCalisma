@@ -221,7 +221,7 @@ public class _15_diziOdev_01 {
         //kontrol eden programı yazınız.Eğer var ise "true" döndürsün.
         //Örnek elemanlar: Apple , Orange , Banana , Pineapple
 
-        String[] fruits = {"Apple", "Orange" , "Banana" , "Pineapple" };
+        String[] fruits = {"Apple", "Orange", "Banana", "Pineapple" };
 
         for (int i = 0; i < fruits.length; i++) {
             if (fruits[i].equals("Apple")) {
@@ -229,23 +229,19 @@ public class _15_diziOdev_01 {
             }
         }
     }
-    public static void soru13(){
+
+    public static void soru13() {
       /*  Soru13- Örnekteki gibi bir String oluşturunuz.$ işaretlerini kaldıran ve sayıları
         toplayan programı yazınız.
         Örnek: "$12 $23 $10 $2 $5 $2"*/
 
-        String values="$12 $23 $10 $2 $5 $2";
-        System.out.println("values = " + values);
-       String newValues= values.replaceAll("[$]","");
-        System.out.println("newValues"+newValues);
-        String[] newValuesSplit=newValues.split(" ");
-       int total=0;
-       int number=0;
-        for (int i = 0; i <newValuesSplit.length ; i++) {
-            number =Integer.parseInt(newValuesSplit[i]);
-            total+=number;
-    }
-        System.out.println("Toplam = " + total);
-
+        String values = "$12 $23 $10 $2 $5 $2";
+        String[] newValues = values.split(" ");
+        int total = 0;
+        for (int i = 0; i < newValues.length; i++) {
+            newValues[i] = newValues[i].replaceAll("[$]", "");
+            total += Integer.parseInt(newValues[i]);
+        }
+        System.out.println("total = " + total);
     }
 }
