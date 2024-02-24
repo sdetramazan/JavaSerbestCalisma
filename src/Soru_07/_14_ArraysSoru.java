@@ -1,6 +1,6 @@
 package Soru_07;
 
-public class _14_2dArraysSoru {
+public class _14_ArraysSoru {
     public static void main(String[] args) {
         int[][] tablo=new int[2][3];
 

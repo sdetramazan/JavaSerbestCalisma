@@ -1,8 +1,6 @@
 package Soru_07;
 
-import java.util.Arrays;
-
-public class _11_2dArrays_Soru {
+public class _11_Arrays_Soru {
     public static void main(String[] args) {
         // 2 ye 3 lük bir tabloyu random 100 e kadar sayılarla doldurunuz
         // bütün doldurma işlemi bittikten sonra

@@ -1,9 +1,8 @@
 package Soru_07;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class _13_2dArraysSoru {
+public class _13_ArraysSoru {
     public static void main(String[] args) {
         // Günün Sorusu :  3x2 lik bir diziyi kullanıcıdan sayı alarak
         // doldurduktan sonra sadece tek elemenlarını tek boyutlu bir

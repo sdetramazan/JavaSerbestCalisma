@@ -2,7 +2,7 @@ package Soru_07;
 
 import java.util.Scanner;
 
-public class _12_2dArraysSoru {
+public class _12_ArraysSoru {
     public static void main(String[] args) {
         // 2x3 lük bir tabloyu random 10 a kadar sayılarla doldurunuz.
         // Daha sonra kullanıcıdan bir sayı alınız.Bu sayı tabloda
