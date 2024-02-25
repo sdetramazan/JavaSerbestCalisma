@@ -14,13 +14,12 @@ public class _01_Asalsayihesaplama {
             System.out.println("2 den küçük sayı girilemez");
             return;
         }
+
+        if (number == 2) {
+            System.out.println(number + " çift asal sayıdır");
+            return;
+        }
         for (int i = 1; i < number; i++) {
-
-
-            if (number == 2) {
-                System.out.println(number + " çift asal sayıdır");
-                break;
-            }
 
             int value = number % (number - i);
             if (value == 0) {
