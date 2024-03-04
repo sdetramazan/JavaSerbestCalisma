@@ -11,8 +11,10 @@ public class _09_Soru {
     //Çıktı: "yazın Java"
 
     public static void main(String[] args) {
-        String cumle ="Java yazın";
-        reverseWord(cumle);
+        //String cumle ="Java yazın";
+
+       reverseWord(word());
+
     }
 
     public static void reverseWord(String cumle){
@@ -22,7 +24,13 @@ public class _09_Soru {
 
         }
         }
+        public static String word(){
+        Scanner input = new Scanner(System.in);
+            System.out.print("Cümle giriniz: ");
+            return input.nextLine();
 
+
+        }
         }
 
 
