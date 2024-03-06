@@ -8,20 +8,27 @@ public class _08_Soru {
     //Method, girilen String'i tersten ekrana yazdıran programı yazınız.
     //Örnek girdi: "Java'yı Seviyorum."
     //Çıktı: ".muroyiveS ıy'avaJ"
-
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Cümle giriniz: ");
-        String cumle = input.nextLine();
-        reverseString(cumle);
-
+    public static void main(String[] args){
+        reverseString(userSentenceEntry());
     }
 
-    public static void reverseString(String cumle){
-        for (int i = 0; i <cumle.length(); i++) {
-         int ters= cumle.length()-i-1;
-            System.out.print(cumle.charAt(ters));
+    public static char reverseString(String sentence){
 
+        char reverse=' ';
+        for (int i = 0; i < sentence.length(); i++) {
+            reverse=sentence.charAt((sentence.length()-1)-i);
+            System.out.print(reverse);
         }
+
+        return reverse;
     }
+
+    public static String userSentenceEntry(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("cümle giriniz: ");
+        return input.nextLine();
+    }
+
+
+
 }

@@ -7,18 +7,24 @@ public class _05_Soru {
     // bir fonksiyonda buldurup mainden yazdırınız
     // Örn: 5 girildiyse -> 1*2*3*4*5 i bulmalısınız
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Sayı giriniz: ");
-       int number=input.nextInt();
-        System.out.println(number+" faktoriyel eşittir "+factorial(number));
+        factorial(userNumberEntry());
+
+    }
+    public static int factorial(int number){
+
+        int factorial=1;
+
+        for (int i = 0; i < number; i++) {
+            factorial*=(number-i);
+        }
+        System.out.println(number+"!  = "+factorial);
+        return factorial;
     }
 
-    public static int factorial(int number){
-        int result=1;
-        for (int i = 1; i <= number; i++) {
-            result*=i;
-        }
-        return result;
+    public static int userNumberEntry(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bir sayı giriniz: ");
+        return input.nextInt();
     }
 
 }

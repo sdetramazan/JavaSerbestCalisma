@@ -5,15 +5,17 @@ public class _10_Soru {
     //Örnek girdi:"m","a","l","e","s"
     //Çıktı: "selam"
     public static void main(String[] args) {
-        String[] characters={"m","a","l","e","s"};
-        reverseArr(characters);
+        String[] character = {"m", "a", "l", "e", "s"};
+        word(character);
     }
-    public static void reverseArr(String[] character){
-
-        for (int i = 1; i <= character.length; i++) {
-            System.out.print(character[character.length-i]);
-
+    public static String word(String[] character){
+        String charact="";
+        for (int i = 0; i < character.length; i++) {
+         charact=  character[(character.length-1)-i];
+            System.out.print( charact);
         }
+        return  charact;
     }
+
 }
 

@@ -10,23 +10,31 @@ public class _11_Soru {
     //Örnek girdi:27 --> Çıktı:true
     //Açıklama: 3*3*3 =27
     //Sonuç= true
+
     public static void main(String[] args) {
-        System.out.println(powerOfThree(number()));
-
+        powerOfThree(userNumberEntry());
     }
+
     public static boolean powerOfThree(int number){
+        boolean result=false;
 
-        boolean isThere=false;
-        for (int i = 1; i <=number ; i++) {
-           if ((i*i*i)==number)
-            isThere=true;
+        for (int i = 0; i < number; i++) {
+            if (i*i*i==number){
+                result=true;
             }
-         return isThere;
+        }
+        System.out.println(result);
+        return result;
     }
-    public static  int number(){
-        Scanner input = new Scanner(System.in);
-        System.out.print("sayı giriniz:");
+
+    public static int userNumberEntry(){
+        Scanner input=new Scanner(System.in);
+        System.out.print("Sayı giriniz: ");
         return input.nextInt();
     }
+
+
+
+
 
 }
