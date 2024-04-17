@@ -32,7 +32,7 @@ public class _03_Soru {
             }
             System.out.println();
         }
-
+        System.out.println("*****************");
 
         // Soru 2 :
         // Kullanıcıdan istediği bir dersin  notunu alarak (0-Mat, 1-Fiz, 2-Kim)
@@ -47,6 +47,7 @@ public class _03_Soru {
 
         }
         System.out.println();
+        System.out.println("*******************");
 
         // TODO
         // Soru 3 :
