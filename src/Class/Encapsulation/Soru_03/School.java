@@ -5,14 +5,12 @@ import java.util.ArrayList;
 public class School {
     private String schoolName;
     private int quota;
-   ArrayList<Student> students=new ArrayList<>();
 
-    public School(String schoolName,int quota){
-        this.schoolName=schoolName;
-        this.quota=quota;
-    }
-    public School(){
+    private ArrayList<Student> students = new ArrayList<>();
 
+    public School(String schoolName, int quota){
+        this.setSchoolName(schoolName);
+        this.setQuota(quota);
     }
 
     public String getSchoolName() {
@@ -38,4 +36,9 @@ public class School {
     public void setStudents(ArrayList<Student> students) {
         this.students = students;
     }
+    public String toString(){
+        return "okul Adı: "+schoolName+
+                "\nKotası :"+quota;
+    }
+
 }

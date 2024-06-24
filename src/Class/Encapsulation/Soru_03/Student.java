@@ -1,30 +1,26 @@
 package Class.Encapsulation.Soru_03;
 
 public class Student {
-  private int Id;
-    private String name;
+    private final int id;
+    private static int sayac=1;
+    private String firstName;
     private String lastName;
-    private int age;
-    private static  int sayac=1;
-    public Student(){
+    private int egg;
 
-    }
-    public Student(String name, String lastName,int age){
-        this.name=name;
-        this.lastName=lastName;
-        this.age=age;
-
-
-
-
+    public Student(String firstName, String lastName, int egg){
+        this.setFirstName(firstName);
+        this.setLastName(lastName);
+        this.setEgg(egg);
+        this.id=sayac++;
     }
 
-    public String getName() {
-        return name;
+
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
@@ -35,34 +31,20 @@ public class Student {
         this.lastName = lastName;
     }
 
-    public int getAge() {
-        return age;
+    public int getEgg() {
+        return egg;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setEgg(int egg) {
+        this.egg = egg;
     }
-
-
-
-    public int getId() {
-        return this.Id+=sayac++;
-    }
-
-
-
 
     public String toString(){
-        return "Öğrencinin\nid : " +
-                this.getId()+ "\nAdı :"+
-                this.name+"\nSoyadı :"+
-                this.lastName+"\nYaşı :"+
-                this.age+"\n";
+        return "\nÖğrencinin:" +
+               "\nId no:"+id +
+               "\n Adı :"+firstName+
+               "\nSoyadı :"+lastName+
+               "\nYaşı :"+egg+"\n**************";
 
-}
-
-
-
-
-
+    }
 }
